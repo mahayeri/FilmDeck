@@ -1,0 +1,16 @@
+@Api_HostAddress = https://localhost:5001
+
+GET {{Api_HostAddress}}/api/movies?sortColumn=voteAverage&sortOrder=asc
+Accept: application/json
+
+###
+pageNumber=1
+pageSize=10
+searchTerm=inception
+sortColumn=title
+sortOrder=asc
+genre=action
+
+###
+GET {{Api_HostAddress}}/api/movies/67c7163d5be5f2a6de28e2cf
+Accept: application/json
